@@ -1,6 +1,6 @@
 # Chart Builder
 
-![](img/chart-builder.mov)
+[](https://user-images.githubusercontent.com/49791141/198853398-f6aed793-0325-4c3b-bdb7-df7da823ee30.mp4)
 
 ### What Is It?
 This python package is broken up into four stages. 

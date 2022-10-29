@@ -152,17 +152,17 @@ NAMESPACE=
   script:
     - >
       chart-builder
-      --aksclustername=${CLUSTER_NAME}-aks-app
+      --aksclustername="${CLUSTER_NAME}"
       --app-name="${RELEASE_NAME}"
       --version="${RELEASE_VERSION}"
-      --environment="${CI_ENVIRONMENT_SLUG}"
+      --environment="${ENVIRONMENT}"
       --team="${DEPARTMENT_TEAM}"
       --release="${RELEASE_NAME}"
       --department-name="${DEPARTMENT_NAME}"
       --department-team="${DEPARTMENT_TEAM}"
       --docker-registry=${DOCKER_REGISTRY}
-      --docker-username=${ACS_PULL_SERVICE_PRINCIPAL_ID}
-      --docker-password=${ACS_PULL_SERVICE_PRINCIPAL_PASSWORD}
+      --docker-username=${DOCKER_USERNAME}
+      --docker-password=${DOCKER_PASSWORD}
       --helm-chart=${HELM_CHART_DIRECTORY}
       --helm-values=${HELM_VALUES_FILE}
       --helm-set=--history-max=4  

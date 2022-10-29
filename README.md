@@ -147,11 +147,6 @@ NAMESPACE=
 ```
 
 ### Pipelines
-This python package is available in the $KUBEPIPE_HELM3 image. 
-This python package can be swapped out with `aks-deploy` as it supports legacy parameters.
-`chart-builder` uses the same flags as `aks-deploy`.
-
-NOTE: `Azure Client ID`, `Client Secret`, `Tenant ID`, and `Reporting Platform` are all set through Environment Variables within the Gitlab Runner. <b>Do not set these flags within your gitlab job!</b>
 
 ```
   script:
